@@ -1,0 +1,128 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 0;
+    color: #00796b;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 2;
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#category-select {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    margin-left: 10px;
+}
+
+#add-btn {
+    padding: 10px 15px;
+    border: none;
+    background-color: #00796b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#add-btn:hover {
+    background-color: #004d40;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    background-color: #b2dfdb;
+    padding: 10px 15px;
+    border: 1px solid #00796b;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.todo-item:hover {
+    background-color: #80cbc4;
+}
+
+.todo-item .delete-btn, .todo-item .done-btn {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.todo-item .delete-btn {
+    background-color: #e57373;
+}
+
+.todo-item .delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+.todo-item .done-btn {
+    background-color: #81c784;
+    margin-right: 10px;
+}
+
+.todo-item .done-btn:hover {
+    background-color: #4caf50;
+}
+
+.todo-item .delete-btn i, .todo-item .done-btn i {
+    margin: 0;
+}
+
+.todo-category {
+    font-size: 12px;
+    color: #00796b;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #555;
+    background-color: #d1e7dd;
+}
